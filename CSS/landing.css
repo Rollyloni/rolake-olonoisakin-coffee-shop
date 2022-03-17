@@ -1,0 +1,137 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #fff0ed;
+}
+
+.hero-section__text {
+  width: 40%;
+  text-align: left;
+  padding-top: 0;
+}
+.hero-section {
+  margin-left: 3.75rem;
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 3.75rem;
+}
+
+.hero-picture,
+.hero.div {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2.5rem;
+}
+
+.card-section {
+  display: inline-block;
+  min-width: 25%;
+  max-width: 30%;
+  min-height: 27.5rem;
+  max-height: 38.33rem;
+  margin: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 5px 9px -1px;
+}
+
+.product-div {
+  display: flex;
+  justify-content: space-around;
+}
+.test-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff0ed;
+}
+
+.test-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-3 {
+  padding-bottom: 2rem;
+  padding-top: 0;
+  margin-top: 0;
+  color: grey;
+}
+.card-section__cost {
+  color: #5bacc3;
+  font-size: 1.8rem;
+}
+.card-section__heading {
+  margin-bottom: 0;
+}
+.card-heading {
+  text-align: center;
+}
+.card-section___image {
+  min-height: 15rem;
+  max-height: 35rem;
+  margin-left: 7rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+footer {
+  background-color: #fff0ed;
+}
+.contact {
+  display: inline-block;
+  padding: 1.2rem;
+  width: 20%;
+  margin-left: 7.5rem;
+}
+span {
+  font-weight: bold;
+}
+.discount {
+  background-color: #393939;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  font-size: 2.81rem;
+  max-width: 90%;
+  margin-top: 5rem;
+}
+.discount-div {
+  height: 30rem;
+  padding-left: 5.265rem;
+  padding-top: 6rem;
+}
+.button-tab {
+  padding: 0.7rem 2.5rem;
+  background-color: #5bacc3;
+  min-width: 11.25rem;
+  max-width: 80%;
+}
+
+.button-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.others-section {
+  display: flex;
+  justify-content: space-around;
+  justify-items: flex-start;
+  margin-top: 5rem;
+}
+.others-section__writeup {
+  width: 40%;
+}
+.others-section__image {
+  background-image: url("/Assets/coldbrewbackground.png");
+  padding-left: 10rem;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  padding-top: 6rem;
+}

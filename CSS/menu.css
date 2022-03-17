@@ -7,7 +7,7 @@ header {
 }
 
 .hero-section {
-  background-image: url("/Assets/coffee-circle.jpg");
+  background-image: url("../Assets/images/coffee-circle.jpg");
   min-height: 36rem;
   max-height: 37.5rem;
   max-width: 100%;
@@ -68,4 +68,7 @@ h3 {
 
 .sub-navbar__list > a {
   color: white;
+}
+.hot-drinks__heading {
+  margin-top: 0;
 }

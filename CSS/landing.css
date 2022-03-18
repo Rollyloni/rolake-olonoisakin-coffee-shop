@@ -10,6 +10,7 @@ header {
   width: 40%;
   text-align: left;
   padding-top: 0;
+  margin-bottom: 2rem;
 }
 .hero-section {
   margin-left: 3.75rem;
@@ -69,9 +70,8 @@ header {
   text-align: center;
 }
 .card-section___image {
-  min-height: 15rem;
-  max-height: 35rem;
-  margin-left: 7rem;
+  height: 18rem;
+  margin-left: 6.5rem;
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
 }
@@ -103,12 +103,37 @@ span {
   padding-top: 6rem;
 }
 .button-tab {
-  padding: 0.7rem 2.5rem;
+  padding: 1rem 2.5rem;
   background-color: #5bacc3;
   min-width: 11.25rem;
   max-width: 80%;
+  position: relative;
+}
+.button-border {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.5rem;
+  width: 10.5rem;
+  top: 22.7rem;
+  left: 3.4rem;
 }
 
+.button-tab__shadow--div {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.5rem;
+  width: 10.5rem;
+  left: 85px;
+  top: 110.2rem;
+}
+.button-border--div {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.4rem;
+  width: 9.8rem;
+  left: 39.8rem;
+  bottom: -34.7rem;
+}
 .button-section {
   text-align: center;
   margin-top: 2rem;
@@ -116,6 +141,7 @@ span {
 .icons {
   display: flex;
   justify-content: space-between;
+  margin: 2rem;
 }
 .others-section {
   display: flex;
@@ -127,11 +153,20 @@ span {
   width: 40%;
 }
 .others-section__image {
-  background-image: url("/Assets/coldbrewbackground.png");
+  background-image: url("../Assets/images/coldbrewbackground.png");
   padding-left: 10rem;
   background-position: center;
   background-size: cover;
-  width: 500px;
-  height: 400px;
+  width: 31.25rem;
+  height: 25rem;
   padding-top: 6rem;
+  position: relative;
+}
+.others-section__image--box {
+  position: absolute;
+  border: 5px solid #5bacc3;
+  height: 25.63rem;
+  width: 30rem;
+  right: 2rem;
+  bottom: 1rem;
 }

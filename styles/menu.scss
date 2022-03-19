@@ -1,0 +1,100 @@
+@keyframes click {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(15px, 15px);
+  }
+}
+
+h1 {
+  margin: 0 auto;
+}
+h2,
+h3 {
+  text-align: center;
+}
+header {
+  background-color: #fff0ed;
+}
+
+/*Hero Section*/
+
+.hero-section {
+  background-image: url("../Assets/images/coffee-circle.jpg");
+  min-height: 36rem;
+  max-height: 37.5rem;
+  max-width: 100%;
+  min-width: 100%;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+a.hero-section__link {
+  color: white;
+}
+.menu {
+  background-color: #393939;
+  padding: 4.125rem;
+  text-align: center;
+  position: relative;
+  margin-left: 570px;
+}
+
+.border {
+  position: absolute;
+  border: 5px solid #5bacc3;
+  width: 19rem;
+  height: 13.5rem;
+  top: 17rem;
+  right: 36.5rem;
+}
+
+.border:active {
+  animation: click 0.4s 0s;
+}
+/* Sub-navigation Section*/
+
+.hot-drinks__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sub-navbar {
+  border: 1px solid black;
+  background-color: #393939;
+}
+
+.sub-navbar__list {
+  display: inline-flex;
+  border-left: 4px solid #5bacc3;
+  padding: 1.25rem;
+  min-height: 3.75rem;
+  max-height: 5rem;
+  width: 33%;
+  margin-left: 25rem;
+  margin-right: -37rem;
+}
+
+.pricing {
+  color: #5bacc3;
+  text-align: center;
+  margin-top: 1rem;
+}
+.hot-drinks,
+.pastries {
+  background-color: #fff0ed;
+}
+
+a.sub-navbar__link {
+  color: white;
+}
+
+p {
+  width: 30%;
+  margin: 0 auto;
+  font-style: italic;
+}

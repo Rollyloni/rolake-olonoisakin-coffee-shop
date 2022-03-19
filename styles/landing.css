@@ -1,0 +1,301 @@
+@-webkit-keyframes color-change {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+
+@keyframes color-change {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+
+@-webkit-keyframes click {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+}
+
+@keyframes click {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+}
+
+/* Hero Section*/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff0ed;
+}
+
+.hero-section__text {
+  width: 40%;
+  text-align: left;
+  padding-top: 0;
+  margin-bottom: 2rem;
+}
+
+.hero-section {
+  margin-left: 3.75rem;
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 3.75rem;
+}
+
+.hero-picture,
+.hero.div {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2.5rem;
+}
+
+/* Card Section*/
+.card-section {
+  display: inline-block;
+  min-width: 25%;
+  max-width: 30%;
+  min-height: 27.5rem;
+  max-height: 38.33rem;
+  margin: 1.25rem;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 0 5px 9px -1px;
+          box-shadow: 0 5px 9px -1px;
+}
+
+.product-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.test-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff0ed;
+}
+
+.test-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.test-3 {
+  padding-bottom: 2rem;
+  padding-top: 0;
+  margin-top: 0;
+  color: grey;
+}
+
+.card-section__cost {
+  color: #5bacc3;
+  font-size: 1.8rem;
+}
+
+.card-section__heading {
+  margin-bottom: 0;
+}
+
+.card-heading {
+  text-align: center;
+}
+
+.card-section___image {
+  height: 18rem;
+  margin-left: 6.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/*Additional Information*/
+.button-tab {
+  padding: 1rem 2.5rem;
+  background-color: #5bacc3;
+  min-width: 11.25rem;
+  max-width: 80%;
+  position: relative;
+}
+
+.button-border {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.5rem;
+  width: 10.5rem;
+  top: 22.7rem;
+  left: 3.4rem;
+}
+
+.button-tab__shadow--div {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.5rem;
+  width: 10.5rem;
+  left: 85px;
+  top: 110.2rem;
+}
+
+.button-border--div {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.4rem;
+  width: 9.6rem;
+  left: 39.9rem;
+  bottom: -34.9rem;
+}
+
+.button-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-border:active,
+.button-tab__shadow--div:active,
+.button-border--div:active {
+  -webkit-animation: click 0.2s 0s;
+          animation: click 0.2s 0s;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+}
+
+.others-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: flex-start;
+  margin-top: 5rem;
+}
+
+.others-section__writeup {
+  width: 40%;
+}
+
+.others-section__image {
+  background-image: url("../Assets/images/coldbrewbackground.png");
+  padding-left: 10rem;
+  background-position: center;
+  background-size: cover;
+  width: 31.25rem;
+  height: 25rem;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.others-section__image--box {
+  position: absolute;
+  border: 5px solid #5bacc3;
+  height: 25.63rem;
+  width: 30rem;
+  right: 2rem;
+  bottom: 1rem;
+}
+
+.others-section__image:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.others-section__image {
+  -webkit-transition: -webkit-transform 2s 0s;
+  transition: -webkit-transform 2s 0s;
+  transition: transform 2s 0s;
+  transition: transform 2s 0s, -webkit-transform 2s 0s;
+}
+
+/* Discount Section*/
+.discount {
+  background-color: #393939;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  font-size: 2.81rem;
+  max-width: 90%;
+  margin-top: 5rem;
+}
+
+.discount-div {
+  height: 30rem;
+  padding-left: 5.265rem;
+  padding-top: 6rem;
+}
+
+.discount {
+  -webkit-animation: color-change 2.5s;
+          animation: color-change 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/* Footer Section*/
+footer {
+  background-color: #fff0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+
+.footer-logo {
+  opacity: 0.3;
+  width: 8rem;
+  position: relative;
+  bottom: 2rem;
+  left: -2.5rem;
+}
+
+.footer-logo__right {
+  opacity: 0.3;
+  width: 8rem;
+  position: relative;
+  bottom: -5rem;
+  right: -2.5rem;
+}
+
+span {
+  font-weight: bold;
+}
+/*# sourceMappingURL=landing.css.map */

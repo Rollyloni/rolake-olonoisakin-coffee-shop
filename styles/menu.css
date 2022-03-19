@@ -1,10 +1,22 @@
+@-webkit-keyframes click {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(15px, 15px);
+            transform: translate(15px, 15px);
+  }
+}
+
 @keyframes click {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
-
   100% {
-    transform: translate(15px, 15px);
+    -webkit-transform: translate(15px, 15px);
+            transform: translate(15px, 15px);
   }
 }
 
@@ -12,12 +24,16 @@ h1 {
   margin: 0 auto;
 }
 
+h2,
+h3 {
+  text-align: center;
+}
+
 header {
   background-color: #fff0ed;
 }
 
 /*Hero Section*/
-
 .hero-section {
   background-image: url("../Assets/images/coffee-circle.jpg");
   min-height: 36rem;
@@ -27,13 +43,20 @@ header {
   color: white;
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
+
 a.hero-section__link {
   color: white;
 }
+
 .menu {
   background-color: #393939;
   padding: 4.125rem;
@@ -52,20 +75,24 @@ a.hero-section__link {
 }
 
 .border:active {
-  animation: click 0.4s 0s;
+  -webkit-animation: click 0.4s 0s;
+          animation: click 0.4s 0s;
 }
-/* Sub-navigation Section*/
 
+/* Sub-navigation Section*/
 .hot-drinks__heading {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .sub-navbar {
   border: 1px solid black;
   background-color: #393939;
 }
 
 .sub-navbar__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   border-left: 4px solid #5bacc3;
   padding: 1.25rem;
@@ -81,12 +108,13 @@ a.hero-section__link {
   text-align: center;
   margin-top: 1rem;
 }
+
 .hot-drinks,
 .pastries {
   background-color: #fff0ed;
 }
 
-.sub-navbar__list > a {
+a.sub-navbar__link {
   color: white;
 }
 
@@ -95,3 +123,4 @@ p {
   margin: 0 auto;
   font-style: italic;
 }
+/*# sourceMappingURL=menu.css.map */

@@ -1,3 +1,24 @@
+@keyframes color-change {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+
+@keyframes click {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(5px, 5px);
+  }
+}
+
+/* Hero Section*/
+
 html {
   margin: 0;
   padding: 0;
@@ -25,6 +46,8 @@ header {
   vertical-align: top;
   margin-bottom: 2.5rem;
 }
+
+/* Card Section*/
 
 .card-section {
   display: inline-block;
@@ -76,32 +99,8 @@ header {
   margin-bottom: 1.2rem;
 }
 
-footer {
-  background-color: #fff0ed;
-}
-.contact {
-  display: inline-block;
-  padding: 1.2rem;
-  width: 20%;
-  margin-left: 7.5rem;
-}
-span {
-  font-weight: bold;
-}
-.discount {
-  background-color: #393939;
-  color: white;
-  padding: 0.5rem 1.25rem;
-  text-align: center;
-  font-size: 2.81rem;
-  max-width: 90%;
-  margin-top: 5rem;
-}
-.discount-div {
-  height: 30rem;
-  padding-left: 5.265rem;
-  padding-top: 6rem;
-}
+/*Additional Information*/
+
 .button-tab {
   padding: 1rem 2.5rem;
   background-color: #5bacc3;
@@ -130,14 +129,20 @@ span {
   position: absolute;
   border: 2px solid black;
   height: 3.4rem;
-  width: 9.8rem;
-  left: 39.8rem;
-  bottom: -34.7rem;
+  width: 9.6rem;
+  left: 39.9rem;
+  bottom: -34.9rem;
 }
 .button-section {
   text-align: center;
   margin-top: 2rem;
 }
+.button-border:active,
+.button-tab__shadow--div:active,
+.button-border--div:active {
+  animation: click 0.2s 0s;
+}
+
 .icons {
   display: flex;
   justify-content: space-between;
@@ -169,4 +174,58 @@ span {
   width: 30rem;
   right: 2rem;
   bottom: 1rem;
+}
+.others-section__image:hover {
+  transform: rotate(360deg);
+}
+.others-section__image {
+  transition: transform 2s 0s;
+}
+
+/* Discount Section*/
+
+.discount {
+  background-color: #393939;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  font-size: 2.81rem;
+  max-width: 90%;
+  margin-top: 5rem;
+}
+.discount-div {
+  height: 30rem;
+  padding-left: 5.265rem;
+  padding-top: 6rem;
+}
+.discount {
+  animation: color-change 2.5s;
+  animation-iteration-count: infinite;
+}
+
+/* Footer Section*/
+
+footer {
+  background-color: #fff0ed;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+}
+
+.footer-logo {
+  opacity: 0.3;
+  width: 8rem;
+  position: relative;
+  bottom: 2rem;
+  left: -2.5rem;
+}
+.footer-logo__right {
+  opacity: 0.3;
+  width: 8rem;
+  position: relative;
+  bottom: -5rem;
+  right: -2.5rem;
+}
+span {
+  font-weight: bold;
 }

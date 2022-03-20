@@ -1,3 +1,5 @@
+@import "./partials/global";
+
 @keyframes color-change {
   from {
     background-color: #393939;
@@ -27,17 +29,18 @@ header {
   background-color: #fff0ed;
 }
 
-.hero-section__text {
-  width: 40%;
-  text-align: left;
-  padding-top: 0;
-  margin-bottom: 2rem;
-}
 .hero-section {
   margin-left: 3.75rem;
   display: inline-block;
   width: 70%;
   margin-bottom: 3.75rem;
+
+  &__text {
+    width: 40%;
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .hero-picture,
@@ -58,8 +61,24 @@ header {
   margin: 1.25rem;
   border-radius: 0.625rem;
   box-shadow: 0 5px 9px -1px;
+  &__cost {
+    color: #5bacc3;
+    font-size: 1.8rem;
+  }
+  &__heading {
+    margin-bottom: 0;
+  }
+  &__image {
+    height: 18rem;
+    margin-left: 6.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
 }
 
+.card-heading {
+  text-align: center;
+}
 .product-div {
   display: flex;
   justify-content: space-around;
@@ -82,57 +101,9 @@ header {
   margin-top: 0;
   color: grey;
 }
-.card-section__cost {
-  color: #5bacc3;
-  font-size: 1.8rem;
-}
-.card-section__heading {
-  margin-bottom: 0;
-}
-.card-heading {
-  text-align: center;
-}
-.card-section___image {
-  height: 18rem;
-  margin-left: 6.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
-}
 
 /*Additional Information*/
 
-.button-tab {
-  padding: 1rem 2.5rem;
-  background-color: #5bacc3;
-  min-width: 11.25rem;
-  max-width: 80%;
-  position: relative;
-}
-.button-border {
-  position: absolute;
-  border: 2px solid black;
-  height: 3.5rem;
-  width: 10.5rem;
-  top: 22.7rem;
-  left: 3.4rem;
-}
-
-.button-tab__shadow--div {
-  position: absolute;
-  border: 2px solid black;
-  height: 3.5rem;
-  width: 10.5rem;
-  left: 85px;
-  top: 110.2rem;
-}
-.button-border--div {
-  position: absolute;
-  border: 2px solid black;
-  height: 3.4rem;
-  width: 9.6rem;
-  left: 39.9rem;
-  bottom: -34.9rem;
-}
 .button-section {
   text-align: center;
   margin-top: 2rem;
@@ -141,6 +112,38 @@ header {
 .button-tab__shadow--div:active,
 .button-border--div:active {
   animation: click 0.2s 0s;
+}
+
+.button-tab {
+  padding: 1rem 2.5rem;
+  background-color: #5bacc3;
+  min-width: 11.25rem;
+  max-width: 80%;
+  position: relative;
+  &__shadow--div {
+    position: absolute;
+    border: 2px solid black;
+    height: 3.5rem;
+    width: 10.5rem;
+    left: 85px;
+    top: 110.2rem;
+  }
+}
+.button-border {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.5rem;
+  width: 10.5rem;
+  top: 22.7rem;
+  left: 3.4rem;
+  &--div {
+    position: absolute;
+    border: 2px solid black;
+    height: 3.4rem;
+    width: 9.6rem;
+    left: 39.9rem;
+    bottom: -35.5rem;
+  }
 }
 
 .icons {
@@ -153,35 +156,32 @@ header {
   justify-content: space-around;
   justify-items: flex-start;
   margin-top: 5rem;
+  &__image {
+    background-image: url("../Assets/images/coldbrewbackground.png");
+    padding-left: 10rem;
+    background-position: center;
+    background-size: cover;
+    width: 31.25rem;
+    height: 25rem;
+    padding-top: 6rem;
+    position: relative;
+    transition: transform 2s 0s;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  &__writeup {
+    width: 40%;
+  }
+  &__image--box {
+    position: absolute;
+    border: 5px solid #5bacc3;
+    height: 25.63rem;
+    width: 30rem;
+    right: 2rem;
+    bottom: 1rem;
+  }
 }
-.others-section__writeup {
-  width: 40%;
-}
-.others-section__image {
-  background-image: url("../Assets/images/coldbrewbackground.png");
-  padding-left: 10rem;
-  background-position: center;
-  background-size: cover;
-  width: 31.25rem;
-  height: 25rem;
-  padding-top: 6rem;
-  position: relative;
-}
-.others-section__image--box {
-  position: absolute;
-  border: 5px solid #5bacc3;
-  height: 25.63rem;
-  width: 30rem;
-  right: 2rem;
-  bottom: 1rem;
-}
-.others-section__image:hover {
-  transform: rotate(360deg);
-}
-.others-section__image {
-  transition: transform 2s 0s;
-}
-
 /* Discount Section*/
 
 .discount {
@@ -192,15 +192,13 @@ header {
   font-size: 2.81rem;
   max-width: 90%;
   margin-top: 5rem;
-}
-.discount-div {
-  height: 30rem;
-  padding-left: 5.265rem;
-  padding-top: 6rem;
-}
-.discount {
   animation: color-change 2.5s;
   animation-iteration-count: infinite;
+  &-div {
+    height: 30rem;
+    padding-left: 5.265rem;
+    padding-top: 6rem;
+  }
 }
 
 /* Footer Section*/
@@ -218,14 +216,15 @@ footer {
   position: relative;
   bottom: 2rem;
   left: -2.5rem;
+  &__right {
+    opacity: 0.3;
+    width: 8rem;
+    position: relative;
+    bottom: -5rem;
+    right: -2.5rem;
+  }
 }
-.footer-logo__right {
-  opacity: 0.3;
-  width: 8rem;
-  position: relative;
-  bottom: -5rem;
-  right: -2.5rem;
-}
+
 span {
   font-weight: bold;
 }

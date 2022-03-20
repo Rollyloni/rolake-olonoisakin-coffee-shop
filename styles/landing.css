@@ -1,3 +1,74 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+a:visited,
+a:link,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5bacc3;
+}
+
+a.button-tab {
+  color: white;
+}
+
+.image-section,
+.main-navbar,
+.Heading {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-navbar {
+  vertical-align: bottom;
+}
+
+.main-navbar--list {
+  display: inline-block;
+}
+
+.main-navbar--list {
+  margin: 1.25rem;
+}
+
+.Navigation-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @-webkit-keyframes color-change {
   from {
     background-color: #393939;
@@ -48,18 +119,18 @@ header {
   background-color: #fff0ed;
 }
 
-.hero-section__text {
-  width: 40%;
-  text-align: left;
-  padding-top: 0;
-  margin-bottom: 2rem;
-}
-
 .hero-section {
   margin-left: 3.75rem;
   display: inline-block;
   width: 70%;
   margin-bottom: 3.75rem;
+}
+
+.hero-section__text {
+  width: 40%;
+  text-align: left;
+  padding-top: 0;
+  margin-bottom: 2rem;
 }
 
 .hero-picture,
@@ -80,6 +151,26 @@ header {
   border-radius: 0.625rem;
   -webkit-box-shadow: 0 5px 9px -1px;
           box-shadow: 0 5px 9px -1px;
+}
+
+.card-section__cost {
+  color: #5bacc3;
+  font-size: 1.8rem;
+}
+
+.card-section__heading {
+  margin-bottom: 0;
+}
+
+.card-section__image {
+  height: 18rem;
+  margin-left: 6.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-heading {
+  text-align: center;
 }
 
 .product-div {
@@ -119,42 +210,25 @@ header {
   color: grey;
 }
 
-.card-section__cost {
-  color: #5bacc3;
-  font-size: 1.8rem;
-}
-
-.card-section__heading {
-  margin-bottom: 0;
-}
-
-.card-heading {
-  text-align: center;
-}
-
-.card-section___image {
-  height: 18rem;
-  margin-left: 6.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
-}
-
 /*Additional Information*/
+.button-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-border:active,
+.button-tab__shadow--div:active,
+.button-border--div:active {
+  -webkit-animation: click 0.2s 0s;
+          animation: click 0.2s 0s;
+}
+
 .button-tab {
   padding: 1rem 2.5rem;
   background-color: #5bacc3;
   min-width: 11.25rem;
   max-width: 80%;
   position: relative;
-}
-
-.button-border {
-  position: absolute;
-  border: 2px solid black;
-  height: 3.5rem;
-  width: 10.5rem;
-  top: 22.7rem;
-  left: 3.4rem;
 }
 
 .button-tab__shadow--div {
@@ -166,25 +240,22 @@ header {
   top: 110.2rem;
 }
 
+.button-border {
+  position: absolute;
+  border: 2px solid black;
+  height: 3.5rem;
+  width: 10.5rem;
+  top: 22.7rem;
+  left: 3.4rem;
+}
+
 .button-border--div {
   position: absolute;
   border: 2px solid black;
   height: 3.4rem;
   width: 9.6rem;
   left: 39.9rem;
-  bottom: -34.9rem;
-}
-
-.button-section {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.button-border:active,
-.button-tab__shadow--div:active,
-.button-border--div:active {
-  -webkit-animation: click 0.2s 0s;
-          animation: click 0.2s 0s;
+  bottom: -35.5rem;
 }
 
 .icons {
@@ -207,10 +278,6 @@ header {
   margin-top: 5rem;
 }
 
-.others-section__writeup {
-  width: 40%;
-}
-
 .others-section__image {
   background-image: url("../Assets/images/coldbrewbackground.png");
   padding-left: 10rem;
@@ -220,6 +287,19 @@ header {
   height: 25rem;
   padding-top: 6rem;
   position: relative;
+  -webkit-transition: -webkit-transform 2s 0s;
+  transition: -webkit-transform 2s 0s;
+  transition: transform 2s 0s;
+  transition: transform 2s 0s, -webkit-transform 2s 0s;
+}
+
+.others-section__image:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.others-section__writeup {
+  width: 40%;
 }
 
 .others-section__image--box {
@@ -231,18 +311,6 @@ header {
   bottom: 1rem;
 }
 
-.others-section__image:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.others-section__image {
-  -webkit-transition: -webkit-transform 2s 0s;
-  transition: -webkit-transform 2s 0s;
-  transition: transform 2s 0s;
-  transition: transform 2s 0s, -webkit-transform 2s 0s;
-}
-
 /* Discount Section*/
 .discount {
   background-color: #393939;
@@ -252,19 +320,16 @@ header {
   font-size: 2.81rem;
   max-width: 90%;
   margin-top: 5rem;
+  -webkit-animation: color-change 2.5s;
+          animation: color-change 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .discount-div {
   height: 30rem;
   padding-left: 5.265rem;
   padding-top: 6rem;
-}
-
-.discount {
-  -webkit-animation: color-change 2.5s;
-          animation: color-change 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 /* Footer Section*/

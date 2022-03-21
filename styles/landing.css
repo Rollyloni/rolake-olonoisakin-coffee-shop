@@ -301,7 +301,6 @@ header {
   position: relative;
   z-index: 6;
 }
-
 .others-section__can:hover {
  -webkit-transform: rotate(360deg);
           transform: rotate(360deg);

@@ -199,8 +199,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 
 .quantity-div {
@@ -287,14 +287,22 @@ header {
   height: 25rem;
   padding-top: 6rem;
   position: relative;
+  z-index: 1;
   -webkit-transition: -webkit-transform 2s 0s;
   transition: -webkit-transform 2s 0s;
   transition: transform 2s 0s;
   transition: transform 2s 0s, -webkit-transform 2s 0s;
 }
-
-.others-section__image:hover {
-  -webkit-transform: rotate(360deg);
+.others-section__can {
+  -webkit-transition: -webkit-transform 2s 0s;
+  transition: -webkit-transform 2s 0s;
+  transition: transform 2s 0s;
+  transition: transform 2s 0s;
+  position: relative;
+  z-index: 6;
+}
+.others-section__can:hover {
+ -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 

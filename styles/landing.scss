@@ -151,37 +151,7 @@ header {
   justify-content: space-between;
   margin: 2rem;
 }
-.others-section {
-  display: flex;
-  justify-content: space-around;
-  justify-items: flex-start;
-  margin-top: 5rem;
-  &__image {
-    background-image: url("../Assets/images/coldbrewbackground.png");
-    padding-left: 10rem;
-    background-position: center;
-    background-size: cover;
-    width: 31.25rem;
-    height: 25rem;
-    padding-top: 6rem;
-    position: relative;
-    transition: transform 2s 0s;
-    &:hover {
-      transform: rotate(360deg);
-    }
-  }
-  &__writeup {
-    width: 40%;
-  }
-  &__image--box {
-    position: absolute;
-    border: 5px solid #5bacc3;
-    height: 25.63rem;
-    width: 30rem;
-    right: 2rem;
-    bottom: 1rem;
-  }
-}
+
 /* Discount Section*/
 
 .discount {

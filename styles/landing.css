@@ -181,7 +181,7 @@ header {
       justify-content: space-around;
 }
 
-.test-1 {
+.card-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +193,7 @@ header {
   background-color: #fff0ed;
 }
 
-.test-2 {
+.card-subdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +203,7 @@ header {
           flex-direction: column;
 }
 
-.test-3 {
+.quantity-div {
   padding-bottom: 2rem;
   padding-top: 0;
   margin-top: 0;

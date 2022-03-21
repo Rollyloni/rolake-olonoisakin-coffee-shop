@@ -83,19 +83,19 @@ header {
   display: flex;
   justify-content: space-around;
 }
-.test-1 {
+.card-div {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #fff0ed;
 }
 
-.test-2 {
+.card-subdiv {
   display: flex;
   flex-direction: column;
 }
 
-.test-3 {
+.quantity-div {
   padding-bottom: 2rem;
   padding-top: 0;
   margin-top: 0;
